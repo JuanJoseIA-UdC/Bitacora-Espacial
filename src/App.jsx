@@ -1,17 +1,31 @@
 import { useState } from "react";
 import "./App.css";
+import "./styles/tokens.css"
 
 function App() {
     const [clics, setClics] = useState(0);
 
     return (
-        <main className="app">
-            <h1>Hola, React</h1>
-            <p>Mi primer proyecto con Vite.</p>
-            <button onClick={() => setClics(clics + 1)}>
-                Clics: {clics}
-            </button>
-        </main>
+        <>
+            <header>
+                <nav aria-label="Principal">
+                    <a href="#noticias">Noticias</a>
+                    <a href="#blogs">Blogs</a>
+                    <a href="#acerca">Acerca</a>
+                </nav>
+            </header>
+
+            <main>
+                <h1>Explora las noticias del espacio</h1>
+                <section aria-labelledby="titulo-noticias" id="noticicas">
+                    <h2 id="titulo-noticias">Últimas noticias</h2>
+                </section>
+            </main>
+
+            <footer>
+                <p>Datos proporcionados por Spaceflight News API</p>
+            </footer>
+        </>
     );
 }
 
