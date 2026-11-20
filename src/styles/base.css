@@ -1,9 +1,9 @@
-
 /* 1. Declarar el orden de las capas */
 @layer reset, base, componentes;
 
 /* 2. Capa de reinicio */
 @layer reset {
+
   *,
   *::before,
   *::after {
@@ -24,6 +24,7 @@
     background-color: var(--color-fondo);
     min-height: 100dvh;
     padding: var(--espacio-4);
+    font-family: var(--fuente-base);
   }
 
   /* Título adaptable */

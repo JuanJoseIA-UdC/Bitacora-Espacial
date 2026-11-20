@@ -72,7 +72,7 @@ function App() {
     return (
         <>
             <header className="contenedor cabecera">
-                <a href="#inicio">Bitácora Espacial</a>
+                <a className="marca" href="#inicio">Bitácora Espacial</a>
                 <nav aria-label="Principal">
                     <a href="#noticias">Noticias</a>
                     <a href="#acerca">Acerca de esta demo</a>
@@ -81,7 +81,7 @@ function App() {
 
             <main className="contenedor" id="inicio">
                 <h1>Explora las noticias del espacio</h1>
-                <p>Misiones, descubrimientos y próximos destinos. Encuentra un tema y sigue explorando.</p>
+                <p className="introduccion">Misiones, descubrimientos y próximos destinos. Encuentra un tema y sigue explorando.</p>
                 <form className="buscador" role="search" onSubmit={buscar}>
                     <label htmlFor="busqueda">Buscar por tema</label>
                     <div className="buscador__controles">
